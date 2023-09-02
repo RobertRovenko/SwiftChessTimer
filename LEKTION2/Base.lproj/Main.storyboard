@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LEKTION2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="PLAYER 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6j-cx-tf2">
+                                <rect key="frame" x="152" y="125" width="85" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubF-I9-emP">
+                                <rect key="frame" x="163" y="195.33333333333334" width="49" height="26.333333333333343"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLAYER 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8J2-vQ-hKI">
+                                <rect key="frame" x="150.33333333333334" y="581.33333333333337" width="74.666666666666657" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pi-l4-jUp">
+                                <rect key="frame" x="163" y="651.66666666666663" width="49" height="26.333333333333371"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="75" translatesAutoresizingMaskIntoConstraints="NO" id="7Rn-pu-cyp">
+                                <rect key="frame" x="50" y="381" width="275" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9c5-bq-6dx">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="6xF-h1-YlM"/>
+                                            <constraint firstAttribute="width" constant="100" id="75i-5W-tlo"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemGreenColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Play"/>
+                                        <connections>
+                                            <action selector="playButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1wr-vd-MQT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEv-80-grN">
+                                        <rect key="frame" x="175" y="0.0" width="100" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="MyO-8k-iZr"/>
+                                            <constraint firstAttribute="width" constant="100" id="y3l-rO-fcg"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Reset"/>
+                                        <connections>
+                                            <action selector="resetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H1d-a9-6Ng"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1pi-l4-jUp" secondAttribute="bottom" constant="100" id="6LO-gr-MyU"/>
+                            <constraint firstItem="ubF-I9-emP" firstAttribute="top" secondItem="p6j-cx-tf2" secondAttribute="bottom" constant="50" id="7a3-U3-7qk"/>
+                            <constraint firstItem="ubF-I9-emP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bdt-Y3-eCX"/>
+                            <constraint firstItem="7Rn-pu-cyp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Cff-rq-MiE"/>
+                            <constraint firstItem="p6j-cx-tf2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="Jag-a4-XmD"/>
+                            <constraint firstItem="p6j-cx-tf2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NEl-Ii-3h3"/>
+                            <constraint firstItem="8J2-vQ-hKI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NsQ-f9-IAf"/>
+                            <constraint firstItem="1pi-l4-jUp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SmV-Rh-KK8"/>
+                            <constraint firstItem="1pi-l4-jUp" firstAttribute="top" secondItem="8J2-vQ-hKI" secondAttribute="bottom" constant="50" id="XN0-cq-ioe"/>
+                            <constraint firstItem="7Rn-pu-cyp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oTI-it-2Kg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playButton" destination="9c5-bq-6dx" id="bk0-eN-78K"/>
+                        <outlet property="player1Timer" destination="ubF-I9-emP" id="UJC-FY-JlO"/>
+                        <outlet property="player2Timer" destination="1pi-l4-jUp" id="DLg-fE-qlX"/>
+                        <outlet property="resetButton" destination="VEv-80-grN" id="paa-Ze-MIw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="2.9556650246305418"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
